@@ -1,0 +1,102 @@
+[
+  {
+    "level": 1,
+    "name": "Intro to Ports",
+    "sets": [
+      { "label": "Web Browsing", "terms": ["80", "443", "HTTP", "HTTPS"] },
+      { "label": "Remote Access", "terms": ["22", "SSH", "Telnet", "23"] },
+      { "label": "Email Protocols", "terms": ["SMTP", "IMAP", "110", "25"] },
+      { "label": "Name Resolution", "terms": ["DNS", "53", "UDP", "TCP"] }
+    ]
+  },
+  {
+    "level": 2,
+    "name": "OSI Layers",
+    "sets": [
+      { "label": "Layer 1: Physical", "terms": ["Coaxial", "Fiber", "Ethernet", "Wireless"] },
+      { "label": "Layer 2: Data Link", "terms": ["MAC", "Switch", "Bridge", "CAM Table"] },
+      { "label": "Layer 3: Network", "terms": ["Router", "IP", "Packet", "NAT"] },
+      { "label": "Upper Layers", "terms": ["Session", "Application", "Presentation", "Data"] }
+    ]
+  },
+  {
+    "level": 3,
+    "name": "Wireless Tech",
+    "sets": [
+      { "label": "Standards", "terms": ["802.11n", "802.11ac", "802.11ax", "802.11a"] },
+      { "label": "Security", "terms": ["WPA2", "WPA3", "AES", "TKIP"] },
+      { "label": "Discovery", "terms": ["SSID", "BSSID", "Beacon", "Probe"] },
+      { "label": "Frequencies", "terms": ["2.4GHz", "5GHz", "Channel", "MIMO"] }
+    ]
+  },
+  {
+    "level": 4,
+    "name": "Security Basics",
+    "sets": [
+      { "label": "Perimeter", "terms": ["Firewall", "Proxy", "UTM", "ACL"] },
+      { "label": "Encryption", "terms": ["PKI", "SSL/TLS", "Public Key", "Certificate"] },
+      { "label": "Authentication", "terms": ["Token", "Biometric", "Multifactor", "Login"] },
+      { "label": "Malware", "terms": ["Virus", "Worm", "Trojan", "Ransomware"] }
+    ]
+  },
+  {
+    "level": 5,
+    "name": "Subnetting",
+    "sets": [
+      { "label": "CIDR", "terms": ["/8", "/16", "/24", "CIDR"] },
+      { "label": "IP Info", "terms": ["IP Address", "Subnet Mask", "Gateway", "Broadcast"] },
+      { "label": "Address Formats", "terms": ["Binary", "Decimal", "Hexadecimal", "Octet"] },
+      { "label": "Classes", "terms": ["Class A", "Class B", "Class C", "Class D"] }
+    ]
+  },
+  {
+    "level": 6,
+    "name": "Troubleshooting",
+    "sets": [
+      { "label": "Ping Tools", "terms": ["Ping", "ICMP", "Traceroute", "TTL"] },
+      { "label": "Config Tools", "terms": ["ipconfig", "ifconfig", "nslookup", "dig"] },
+      { "label": "Packet Capture", "terms": ["Wireshark", "Tcpdump", "Sniffer", "Analyzer"] },
+      { "label": "Cable Tools", "terms": ["Loopback", "Punchdown", "Tester", "Toner Probe"] }
+    ]
+  },
+  {
+    "level": 7,
+    "name": "Tunneling & VPN",
+    "sets": [
+      { "label": "VPN Types", "terms": ["GRE", "L2TP", "PPTP", "SSL VPN"] },
+      { "label": "IPSec Suite", "terms": ["IKE", "IPSec", "SA", "Encryption"] },
+      { "label": "Tunnel Modes", "terms": ["Split Tunnel", "Full Tunnel", "Site-to-Site", "Remote Access"] },
+      { "label": "Legacy Tech", "terms": ["PPP", "PPPoe", "MPLS", "Metro Ethernet"] }
+    ]
+  },
+  {
+    "level": 8,
+    "name": "Network Services",
+    "sets": [
+      { "label": "DHCP", "terms": ["Scope", "Lease", "Reservation", "DHCP"] },
+      { "label": "DNS Records", "terms": ["A Record", "CNAME", "MX Record", "DNS"] },
+      { "label": "Time Sync", "terms": ["NTP", "SNTP", "Clock Drift", "Time Server"] },
+      { "label": "Logging", "terms": ["Syslog", "SIEM", "Event Log", "Log Aggregation"] }
+    ]
+  },
+  {
+    "level": 9,
+    "name": "Real-World Mix",
+    "sets": [
+      { "label": "High Availability", "terms": ["Load Balancer", "Failover", "Clustering", "HA"] },
+      { "label": "Disaster Recovery", "terms": ["Backup", "Hot Site", "Warm Site", "Cold Site"] },
+      { "label": "Edge Security", "terms": ["Firewall", "Proxy", "VPN Concentrator", "NAT"] },
+      { "label": "Threats", "terms": ["Phishing", "Spoofing", "Ransomware", "DDoS"] }
+    ]
+  },
+  {
+    "level": 10,
+    "name": "Final Challenge",
+    "sets": [
+      { "label": "Web Protocols", "terms": ["HTTP", "HTTPS", "443", "80"] },
+      { "label": "Security Concepts", "terms": ["PKI", "Token", "Firewall", "ACL"] },
+      { "label": "Transmission", "terms": ["TCP", "UDP", "Packet", "Port"] },
+      { "label": "Common Tools", "terms": ["Ping", "Traceroute", "Wireshark", "ipconfig"] }
+    ]
+  }
+]
