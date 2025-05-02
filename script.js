@@ -1,4 +1,4 @@
-// script.js — Phase 1 Fixes: Timer, Percent, Soft Hint
+// script.js — Updated with Shuffle Button (only unmatched tiles shuffle)
 
 const TOTAL_LEVELS = 10;
 const PROGRESS_KEY = "networkplus_progress";
@@ -61,12 +61,15 @@ async function startLevel(level) {
 
   const gameScreen = document.getElementById("game-screen");
   gameScreen.innerHTML = `
+    <div id='ui-panel'>
+      Match 4 related terms. Timer = score. Hints cost 15s. Incorrect guesses cost 20s.
+      <div id='status-bar'>00% Complete</div>
+      <button id='hint-btn'>Use Hint (3 left)</button>
+      <button id='shuffle-btn'>Shuffle Tiles</button>
+      <div id='timer'>Time: ${formatTime(timeRemaining)}</div>
+    </div>
     <div id='grid'></div>
     <div id='boxes'></div>
-    <button id='hint-btn'>Use Hint (3 left)</button>
-    <div id='status-bar'>00% Complete</div>
-    <div id='timer'>Time: ${formatTime(timeRemaining)}</div>
-    <div id='lore' style='margin-top:10px; font-size:0.6rem; text-align:center;'></div>
   `;
 
   const res = await fetch("levels.json");
@@ -76,7 +79,8 @@ async function startLevel(level) {
 
   const correctSets = levelData.sets.map(set => new Set(set.terms));
   const labels = levelData.sets.map(set => set.label);
-  let allTerms = levelData.sets.flatMap(set => set.terms).sort(() => 0.5 - Math.random());
+  let allTerms = levelData.sets.flatMap(set => set.terms);
+  allTerms = allTerms.sort(() => 0.5 - Math.random());
 
   const grid = document.getElementById("grid");
   grid.style.display = "grid";
@@ -88,9 +92,7 @@ async function startLevel(level) {
   const boxes = document.getElementById("boxes");
   boxes.innerHTML = "";
   boxes.style.display = "flex";
-  boxes.style.flexWrap = "nowrap";
   boxes.style.justifyContent = "space-between";
-  boxes.style.gap = "15px";
 
   const selected = [];
   const matchedTerms = new Set();
@@ -106,24 +108,30 @@ async function startLevel(level) {
     boxes.appendChild(box);
   });
 
-  allTerms.forEach(term => {
-    const tile = document.createElement("div");
-    tile.className = "tile";
-    tile.textContent = term;
-    tile.onclick = () => {
-      if (tile.classList.contains("selected")) {
-        tile.classList.remove("selected");
-        const idx = selected.findIndex(obj => obj.tile === tile);
-        if (idx !== -1) selected.splice(idx, 1);
-      } else {
-        if (selected.length >= 4) return;
-        tile.classList.add("selected");
-        selected.push({ tile, term });
-      }
-      if (selected.length === 4) checkSelection();
-    };
-    grid.appendChild(tile);
-  });
+  function renderTiles(termArray) {
+    grid.innerHTML = "";
+    termArray.forEach(term => {
+      if (matchedTerms.has(term)) return;
+      const tile = document.createElement("div");
+      tile.className = "tile";
+      tile.textContent = term;
+      tile.onclick = () => {
+        if (tile.classList.contains("selected")) {
+          tile.classList.remove("selected");
+          const idx = selected.findIndex(obj => obj.tile === tile);
+          if (idx !== -1) selected.splice(idx, 1);
+        } else {
+          if (selected.length >= 4) return;
+          tile.classList.add("selected");
+          selected.push({ tile, term });
+        }
+        if (selected.length === 4) checkSelection();
+      };
+      grid.appendChild(tile);
+    });
+  }
+
+  renderTiles(allTerms);
 
   document.getElementById("hint-btn").onclick = () => {
     if (hintsLeft <= 0) return;
@@ -131,6 +139,12 @@ async function startLevel(level) {
     hintsLeft--;
     document.getElementById("hint-btn").textContent = `Use Hint (${hintsLeft} left)`;
     flashSoftHint();
+  };
+
+  document.getElementById("shuffle-btn").onclick = () => {
+    const remaining = allTerms.filter(term => !matchedTerms.has(term));
+    const shuffled = [...remaining].sort(() => 0.5 - Math.random());
+    renderTiles(shuffled);
   };
 
   function flashSoftHint() {
