@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Network+ Connections</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 id="game-title">Network+ Connections</h1>
+  <h1>Network+ Connections</h1>
 
-  <div id="boot-screen">LOADING MDR INTERFACE...
-Decrypting...
-Initializing Neural Layer...</div>
-
-  <div id="ui-panel">
-    <div id="instructions">Match 4 related terms. Timer = score. Hints cost 15s. Incorrect guesses cost 20s.</div>
-    <div id="status-bar">00% Complete</div>
-    <button id="hint-btn">Use Hint (3 left)</button>
-    <div id="timer">Time: 5:00</div>
-  </div>
+  <div id="boot-screen">LOADING MDR INTERFACE...<br>Decrypting...<br>Initializing Neural Layer...</div>
+  <div id="intro-message">Click Level 1 to Begin</div>
 
   <div id="level-select"></div>
   <div id="game-screen"></div>
 
-  <div class="crt"></div>
   <script src="script.js"></script>
 </body>
 </html>
