@@ -1,0 +1,102 @@
+[
+  {
+    "level": 1,
+    "name": "Threat Actors",
+    "sets": [
+      { "label": "Actor Types", "terms": ["Nation-State", "Hacktivist", "Insider", "Script Kiddie"] },
+      { "label": "Motivations", "terms": ["Financial", "Political", "Revenge", "Espionage"] },
+      { "label": "Attack Vectors", "terms": ["Email", "Web", "USB", "Social Media"] },
+      { "label": "Intelligence", "terms": ["OSINT", "Dark Web", "Threat Feed", "IOC"] }
+    ]
+  },
+  {
+    "level": 2,
+    "name": "Malware & Attacks",
+    "sets": [
+      { "label": "Malware Types", "terms": ["Ransomware", "Trojan", "Worm", "Rootkit"] },
+      { "label": "Attack Methods", "terms": ["Phishing", "Spear Phishing", "Whaling", "Vishing"] },
+      { "label": "Web Attacks", "terms": ["XSS", "SQL Injection", "CSRF", "Directory Traversal"] },
+      { "label": "Network Attacks", "terms": ["DDoS", "Man-in-Middle", "ARP Poisoning", "DNS Spoofing"] }
+    ]
+  },
+  {
+    "level": 3,
+    "name": "Cryptography",
+    "sets": [
+      { "label": "Symmetric", "terms": ["AES", "DES", "3DES", "Block Cipher"] },
+      { "label": "Asymmetric", "terms": ["RSA", "ECC", "Public Key", "Private Key"] },
+      { "label": "Hashing", "terms": ["SHA-256", "MD5", "HMAC", "Salt"] },
+      { "label": "PKI", "terms": ["Certificate", "CA", "CRL", "OCSP"] }
+    ]
+  },
+  {
+    "level": 4,
+    "name": "Identity Management",
+    "sets": [
+      { "label": "Authentication", "terms": ["MFA", "Biometrics", "Token", "Password"] },
+      { "label": "Protocols", "terms": ["LDAP", "Kerberos", "SAML", "OAuth"] },
+      { "label": "Access Control", "terms": ["RBAC", "DAC", "MAC", "ABAC"] },
+      { "label": "Account Types", "terms": ["Privileged", "Service", "Guest", "Shared"] }
+    ]
+  },
+  {
+    "level": 5,
+    "name": "Network Security",
+    "sets": [
+      { "label": "Devices", "terms": ["Firewall", "IDS", "IPS", "WAF"] },
+      { "label": "Segmentation", "terms": ["VLAN", "DMZ", "Air Gap", "Microsegmentation"] },
+      { "label": "Protocols", "terms": ["TLS", "IPSec", "SSH", "HTTPS"] },
+      { "label": "Wireless", "terms": ["WPA3", "802.1X", "EAP", "RADIUS"] }
+    ]
+  },
+  {
+    "level": 6,
+    "name": "Cloud Security",
+    "sets": [
+      { "label": "Models", "terms": ["IaaS", "PaaS", "SaaS", "FaaS"] },
+      { "label": "Deployment", "terms": ["Public", "Private", "Hybrid", "Community"] },
+      { "label": "Security", "terms": ["CASB", "SASE", "Zero Trust", "Encryption"] },
+      { "label": "Responsibility", "terms": ["Shared Model", "Data Owner", "Provider", "Customer"] }
+    ]
+  },
+  {
+    "level": 7,
+    "name": "Incident Response",
+    "sets": [
+      { "label": "IR Phases", "terms": ["Preparation", "Detection", "Containment", "Recovery"] },
+      { "label": "Forensics", "terms": ["Chain of Custody", "Evidence", "Imaging", "Hash Verification"] },
+      { "label": "Tools", "terms": ["SIEM", "SOAR", "Packet Capture", "Log Analysis"] },
+      { "label": "Documentation", "terms": ["Incident Report", "Lessons Learned", "Timeline", "Root Cause"] }
+    ]
+  },
+  {
+    "level": 8,
+    "name": "Governance & Risk",
+    "sets": [
+      { "label": "Frameworks", "terms": ["NIST", "ISO 27001", "CIS", "COBIT"] },
+      { "label": "Risk Management", "terms": ["Risk Assessment", "Mitigation", "Transfer", "Acceptance"] },
+      { "label": "Compliance", "terms": ["GDPR", "HIPAA", "PCI-DSS", "SOX"] },
+      { "label": "Policies", "terms": ["AUP", "Privacy Policy", "Security Policy", "Incident Response"] }
+    ]
+  },
+  {
+    "level": 9,
+    "name": "Vulnerability Management",
+    "sets": [
+      { "label": "Assessment", "terms": ["Vulnerability Scan", "Penetration Test", "Bug Bounty", "Red Team"] },
+      { "label": "Tools", "terms": ["Nessus", "Nmap", "Burp Suite", "Metasploit"] },
+      { "label": "Remediation", "terms": ["Patching", "Hardening", "Configuration", "Compensating Control"] },
+      { "label": "Scoring", "terms": ["CVSS", "CVE", "Zero-Day", "Exploit DB"] }
+    ]
+  },
+  {
+    "level": 10,
+    "name": "Security+ Final Challenge",
+    "sets": [
+      { "label": "Threats", "terms": ["Ransomware", "Phishing", "DDoS", "SQL Injection"] },
+      { "label": "Defense", "terms": ["Firewall", "MFA", "Encryption", "IDS"] },
+      { "label": "Crypto", "terms": ["AES", "RSA", "SHA-256", "Certificate"] },
+      { "label": "Governance", "terms": ["NIST", "Risk Assessment", "GDPR", "Incident Response"] }
+    ]
+  }
+]

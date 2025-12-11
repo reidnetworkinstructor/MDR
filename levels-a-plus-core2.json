@@ -1,0 +1,102 @@
+[
+  {
+    "level": 1,
+    "name": "Windows Basics",
+    "sets": [
+      { "label": "Windows Versions", "terms": ["Windows 10", "Windows 11", "Home", "Pro"] },
+      { "label": "File Systems", "terms": ["NTFS", "FAT32", "exFAT", "Permissions"] },
+      { "label": "System Tools", "terms": ["Task Manager", "Device Manager", "msconfig", "Control Panel"] },
+      { "label": "Updates", "terms": ["Windows Update", "Patch", "Service Pack", "Feature Update"] }
+    ]
+  },
+  {
+    "level": 2,
+    "name": "macOS & Linux",
+    "sets": [
+      { "label": "macOS Features", "terms": ["Finder", "Time Machine", "Spotlight", "Terminal"] },
+      { "label": "Linux Distros", "terms": ["Ubuntu", "Fedora", "Debian", "CentOS"] },
+      { "label": "Commands", "terms": ["ls", "cd", "chmod", "sudo"] },
+      { "label": "File Systems", "terms": ["APFS", "ext4", "HFS+", "Btrfs"] }
+    ]
+  },
+  {
+    "level": 3,
+    "name": "Security Fundamentals",
+    "sets": [
+      { "label": "Authentication", "terms": ["Password", "MFA", "Biometrics", "Smart Card"] },
+      { "label": "Malware Types", "terms": ["Virus", "Ransomware", "Spyware", "Rootkit"] },
+      { "label": "Protection", "terms": ["Antivirus", "Firewall", "UAC", "BitLocker"] },
+      { "label": "Best Practices", "terms": ["Updates", "Backup", "Strong Password", "Least Privilege"] }
+    ]
+  },
+  {
+    "level": 4,
+    "name": "Network Security",
+    "sets": [
+      { "label": "Wireless Security", "terms": ["WPA2", "WPA3", "SSID", "MAC Filtering"] },
+      { "label": "VPN", "terms": ["Remote Access", "Site-to-Site", "Tunnel", "Encryption"] },
+      { "label": "Threats", "terms": ["Phishing", "Social Engineering", "Man-in-Middle", "Spoofing"] },
+      { "label": "Defense", "terms": ["IDS", "IPS", "DMZ", "Honeypot"] }
+    ]
+  },
+  {
+    "level": 5,
+    "name": "Software Installation",
+    "sets": [
+      { "label": "Installation Types", "terms": ["Clean Install", "Upgrade", "Repair", "Recovery"] },
+      { "label": "Licensing", "terms": ["OEM", "Retail", "Volume", "Subscription"] },
+      { "label": "Deployment", "terms": ["Image", "PXE Boot", "USB Install", "Network Share"] },
+      { "label": "Package Managers", "terms": ["apt", "yum", "Homebrew", "Chocolatey"] }
+    ]
+  },
+  {
+    "level": 6,
+    "name": "Troubleshooting OS",
+    "sets": [
+      { "label": "Boot Problems", "terms": ["Safe Mode", "Recovery Mode", "Boot Loop", "Startup Repair"] },
+      { "label": "Performance", "terms": ["High CPU", "Memory Leak", "Disk Usage", "Slow Boot"] },
+      { "label": "Tools", "terms": ["Event Viewer", "Resource Monitor", "Performance Monitor", "Reliability"] },
+      { "label": "Fixes", "terms": ["SFC", "DISM", "chkdsk", "Disk Cleanup"] }
+    ]
+  },
+  {
+    "level": 7,
+    "name": "Mobile OS Security",
+    "sets": [
+      { "label": "Device Security", "terms": ["Screen Lock", "Encryption", "Remote Wipe", "MDM"] },
+      { "label": "App Security", "terms": ["App Store", "Sideloading", "Permissions", "Sandbox"] },
+      { "label": "BYOD", "terms": ["Policy", "Containerization", "Corporate Data", "Personal Data"] },
+      { "label": "Threats", "terms": ["Jailbreak", "Rooting", "Malicious App", "Lost Device"] }
+    ]
+  },
+  {
+    "level": 8,
+    "name": "Documentation & Procedures",
+    "sets": [
+      { "label": "Documentation", "terms": ["Ticket", "Knowledge Base", "SOP", "Runbook"] },
+      { "label": "Change Management", "terms": ["RFC", "Approval", "Rollback", "Testing"] },
+      { "label": "Backup Types", "terms": ["Full", "Incremental", "Differential", "Snapshot"] },
+      { "label": "Disaster Recovery", "terms": ["RPO", "RTO", "Hot Site", "Cold Site"] }
+    ]
+  },
+  {
+    "level": 9,
+    "name": "Professionalism",
+    "sets": [
+      { "label": "Communication", "terms": ["Active Listening", "Clear Speech", "Documentation", "Follow-up"] },
+      { "label": "Ethics", "terms": ["Confidentiality", "Privacy", "NDA", "Compliance"] },
+      { "label": "Safety", "terms": ["ESD", "Grounding", "MSDS", "Proper Lifting"] },
+      { "label": "Environment", "terms": ["Recycling", "E-Waste", "Battery Disposal", "Regulations"] }
+    ]
+  },
+  {
+    "level": 10,
+    "name": "Core 2 Final Challenge",
+    "sets": [
+      { "label": "OS Mix", "terms": ["Windows 10", "macOS", "Ubuntu", "NTFS"] },
+      { "label": "Security Mix", "terms": ["MFA", "BitLocker", "Antivirus", "Firewall"] },
+      { "label": "Troubleshooting", "terms": ["Safe Mode", "Event Viewer", "SFC", "chkdsk"] },
+      { "label": "Procedures", "terms": ["Ticket", "Backup", "Change Management", "Documentation"] }
+    ]
+  }
+]

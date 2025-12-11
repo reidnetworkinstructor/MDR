@@ -1,0 +1,102 @@
+[
+  {
+    "level": 1,
+    "name": "Mobile Devices",
+    "sets": [
+      { "label": "Mobile OS", "terms": ["iOS", "Android", "iPadOS", "ChromeOS"] },
+      { "label": "Connection Types", "terms": ["Lightning", "USB-C", "Bluetooth", "NFC"] },
+      { "label": "Mobile Security", "terms": ["PIN", "Biometric", "MDM", "Remote Wipe"] },
+      { "label": "Sync Methods", "terms": ["iCloud", "Google Sync", "ActiveSync", "Backup"] }
+    ]
+  },
+  {
+    "level": 2,
+    "name": "Networking Basics",
+    "sets": [
+      { "label": "IP Addressing", "terms": ["IPv4", "IPv6", "DHCP", "Static IP"] },
+      { "label": "Network Devices", "terms": ["Router", "Switch", "Access Point", "Modem"] },
+      { "label": "Cables", "terms": ["Cat5e", "Cat6", "Fiber Optic", "Coaxial"] },
+      { "label": "Protocols", "terms": ["TCP", "UDP", "HTTP", "DNS"] }
+    ]
+  },
+  {
+    "level": 3,
+    "name": "Hardware Components",
+    "sets": [
+      { "label": "CPU", "terms": ["Intel", "AMD", "Cores", "Clock Speed"] },
+      { "label": "Memory", "terms": ["RAM", "DDR4", "DIMM", "SO-DIMM"] },
+      { "label": "Storage", "terms": ["SSD", "HDD", "NVMe", "SATA"] },
+      { "label": "Expansion", "terms": ["PCIe", "GPU", "Sound Card", "NIC"] }
+    ]
+  },
+  {
+    "level": 4,
+    "name": "Printers & Peripherals",
+    "sets": [
+      { "label": "Printer Types", "terms": ["Laser", "Inkjet", "Thermal", "Impact"] },
+      { "label": "Connections", "terms": ["USB", "Ethernet", "Wi-Fi", "Bluetooth"] },
+      { "label": "Maintenance", "terms": ["Toner", "Ink", "Fuser", "Drum"] },
+      { "label": "Output Devices", "terms": ["Monitor", "Projector", "Speakers", "Headset"] }
+    ]
+  },
+  {
+    "level": 5,
+    "name": "Cloud & Virtualization",
+    "sets": [
+      { "label": "Cloud Types", "terms": ["IaaS", "PaaS", "SaaS", "Public Cloud"] },
+      { "label": "Virtual Machines", "terms": ["Hypervisor", "VM", "Snapshot", "Guest OS"] },
+      { "label": "Cloud Storage", "terms": ["OneDrive", "Google Drive", "Dropbox", "iCloud"] },
+      { "label": "Deployment", "terms": ["Private Cloud", "Hybrid Cloud", "Community", "Multi-tenant"] }
+    ]
+  },
+  {
+    "level": 6,
+    "name": "Displays & Video",
+    "sets": [
+      { "label": "Connectors", "terms": ["HDMI", "DisplayPort", "VGA", "DVI"] },
+      { "label": "Display Types", "terms": ["LCD", "LED", "OLED", "IPS"] },
+      { "label": "Resolution", "terms": ["1080p", "4K", "1440p", "720p"] },
+      { "label": "Settings", "terms": ["Brightness", "Contrast", "Refresh Rate", "Aspect Ratio"] }
+    ]
+  },
+  {
+    "level": 7,
+    "name": "Power & Cooling",
+    "sets": [
+      { "label": "Power Supply", "terms": ["PSU", "Wattage", "Modular", "80 Plus"] },
+      { "label": "Protection", "terms": ["UPS", "Surge Protector", "Battery Backup", "AVR"] },
+      { "label": "Cooling", "terms": ["Heat Sink", "Fan", "Thermal Paste", "Liquid Cooling"] },
+      { "label": "Electrical", "terms": ["AC", "DC", "Voltage", "Amperage"] }
+    ]
+  },
+  {
+    "level": 8,
+    "name": "BIOS & Motherboard",
+    "sets": [
+      { "label": "Firmware", "terms": ["BIOS", "UEFI", "POST", "CMOS"] },
+      { "label": "Boot Options", "terms": ["Boot Order", "Secure Boot", "Fast Boot", "Legacy"] },
+      { "label": "Form Factors", "terms": ["ATX", "Micro-ATX", "Mini-ITX", "E-ATX"] },
+      { "label": "Motherboard", "terms": ["Chipset", "Socket", "Northbridge", "Southbridge"] }
+    ]
+  },
+  {
+    "level": 9,
+    "name": "Troubleshooting Hardware",
+    "sets": [
+      { "label": "Boot Issues", "terms": ["No POST", "Beep Codes", "Black Screen", "Blue Screen"] },
+      { "label": "Tools", "terms": ["Multimeter", "Loopback Plug", "POST Card", "PSU Tester"] },
+      { "label": "Symptoms", "terms": ["Overheating", "Shutdown", "Slow Performance", "Noise"] },
+      { "label": "Solutions", "terms": ["Reseat", "Replace", "Update Driver", "Clean Dust"] }
+    ]
+  },
+  {
+    "level": 10,
+    "name": "Core 1 Final Challenge",
+    "sets": [
+      { "label": "Mobile Tech", "terms": ["iOS", "Android", "Bluetooth", "NFC"] },
+      { "label": "Hardware Mix", "terms": ["SSD", "RAM", "CPU", "PSU"] },
+      { "label": "Network Gear", "terms": ["Router", "Switch", "Cat6", "DHCP"] },
+      { "label": "Cloud Services", "terms": ["IaaS", "SaaS", "Hypervisor", "VM"] }
+    ]
+  }
+]
