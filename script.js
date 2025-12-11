@@ -1,7 +1,54 @@
-// script.js — Updated with Shuffle Button (only unmatched tiles shuffle)
+// script.js — Course-aware MDR game with URL parameter support
 
-const TOTAL_LEVELS = 10;
-const PROGRESS_KEY = "networkplus_progress";
+// Course configuration - maps course IDs to their settings
+const COURSE_CONFIG = {
+  "network-plus": {
+    title: "Network+ Connections",
+    description: "CompTIA Network+ Certification Prep",
+    levelsFile: "levels-network-plus.json",
+    progressKey: "networkplus_progress",
+    totalLevels: 10
+  },
+  "a-plus-core1": {
+    title: "A+ Core 1 Connections",
+    description: "CompTIA A+ Core 1 (220-1101) Prep",
+    levelsFile: "levels-a-plus-core1.json",
+    progressKey: "aplus_core1_progress",
+    totalLevels: 10
+  },
+  "a-plus-core2": {
+    title: "A+ Core 2 Connections",
+    description: "CompTIA A+ Core 2 (220-1102) Prep",
+    levelsFile: "levels-a-plus-core2.json",
+    progressKey: "aplus_core2_progress",
+    totalLevels: 10
+  },
+  "security-plus": {
+    title: "Security+ Connections",
+    description: "CompTIA Security+ Certification Prep",
+    levelsFile: "levels-security-plus.json",
+    progressKey: "securityplus_progress",
+    totalLevels: 10
+  }
+};
+
+// Parse URL parameters to get course
+function getCourseFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const course = urlParams.get("course");
+  // Default to network-plus if no course specified or invalid course
+  if (course && COURSE_CONFIG[course]) {
+    return course;
+  }
+  return "network-plus";
+}
+
+// Get current course configuration
+const CURRENT_COURSE = getCourseFromURL();
+const COURSE = COURSE_CONFIG[CURRENT_COURSE];
+const TOTAL_LEVELS = COURSE.totalLevels;
+const PROGRESS_KEY = COURSE.progressKey;
+
 let timerInterval;
 let timeRemaining = 300;
 let hintsLeft = 3;
@@ -32,6 +79,13 @@ function startBootAnimation(callback) {
 }
 
 function buildLevelSelect() {
+  // Update page title and heading based on course
+  document.title = COURSE.title;
+  const heading = document.querySelector("h1");
+  if (heading) {
+    heading.textContent = COURSE.title;
+  }
+
   const container = document.getElementById("level-select");
   container.innerHTML = "";
   const unlocked = loadProgress();
@@ -72,7 +126,7 @@ async function startLevel(level) {
     <div id='boxes'></div>
   `;
 
-  const res = await fetch("levels.json");
+  const res = await fetch(COURSE.levelsFile);
   const levels = await res.json();
   const levelData = levels.find(l => l.level === level);
   if (!levelData) return alert("Level data not found.");
